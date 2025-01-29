@@ -1,10 +1,7 @@
 # Numbers-Converter
 
-<Preview>
+Preview: https://mmodoloo.github.io/Numbers-Converter/
 
-https://mmodoloo.github.io/Numbers-Converter/
-
-</Preview>
 
 <A simple number converter using HTML, CSS and JavaScript./>
 
