@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+    
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Climate+Crisis&family=Oi&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+    
+}
+    body {
+
+        background-color: rgb(77, 0, 0);
+        
+       
+       margin:18px;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+
+    .header {
+
+       
+        padding: 0.1%;
+        display:flex;
+        height: 95px;
+        }
+
+    .nav-bar {
+
+        
+        display: flex;
+        width: 100%;
+        height: 95px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .nav-bar-all {
+
+        display: flex;
+       
+        width: 90%;
+        height: 95px;
+        justify-content: space-between;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+  color: rgb(245, 0, 0);
+  font-size: 0.8rem;
+  
+      
+    }
+
+    .navbar-left {
+
+        display:flex;
+    } 
+
+    .header img {
+
+        
+        transform: scale(1);
+        
+    }
+     .navbar-languages {
+
+        display: flex;
+      
+       
+        
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+       
+        
+     }
+
+     .br {
+
+        border: 1px solid rgb(219, 1, 1);
+        background-color: rgb(219, 1, 1);
+        border-radius: 17px;
+        color: rgb(77, 0, 0);
+        padding: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+     }
+
+     .br:hover {
+
+        border: 1px solid rgb(250, 0, 0);
+        background-color: rgb(250, 0, 0);
+     }
+
+     
+     .eua {
+
+        cursor: pointer;
+        padding: 8px;
+        transition: background-color 0.2s ease;
+        background-color: none;
+        border: none;
+        border-radius: 17px;
+     }
+     
+     .eua:hover {
+
+        background-color: rgba(219, 1, 1, 0.205);
+        border: rgba(219, 1, 1, 0.205);
+        border-radius: 17px;
+        padding: 8px;
+
+     }
+     .esp {
+
+        cursor: pointer;
+        padding: 8px;
+        transition: background-color 0.2s ease;
+        background-color: none;
+        border: none;
+        border-radius: 17px;
+        
+     }
+
+     .esp:hover {
+
+        background-color: rgba(219, 1, 1, 0.205);
+        border: rgba(219, 1, 1, 0.205);
+        border-radius: 17px;
+        padding: 8px;
+     }
+    
+    .navbar-languages i {
+
+        font-family: "Noto Color Emoji", sans-serif;
+    }
+
+    .navbar-languages span {
+
+        color: transparent;
+    }
+
+    .navbar-recursos {
+
+        
+        
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 21px;
+        
+       
+    }
+
+    
+    
+    .disponiveis {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor:pointer;
+        transition: background-color 0.2s ease;
+        gap:6px;
+    }
+
+    .disponiveis:after {
+
+        content: "";
+        position:absolute;
+        background-color: rgb(250, 0, 0) ;
+        width: 0;
+        margin-right: 12px;
+        height: 1.8px;
+        margin-top: 26px;
+        transition: 0.3s ease; 
+    }
+
+    .disponiveis:hover:after {
+
+        width: 12.8%;
+    }
+
+    .disponiveis:hover {
+
+        color:rgb(255, 27, 27);
+    }
+   
+    .como-usar {
+
+        cursor: pointer;
+        padding: 8px;
+        transition: background-color 0.2s ease;
+        background-color: none;
+        border: none;
+        border-radius: 17px;
+    }
+
+    .como-usar:after {
+
+        content: "";
+        position:absolute;
+        background-color: rgb(250, 0, 0) ;
+        width: 0;
+        height: 1.7px;
+        margin-top: 5px;
+        transition: 0.3s ease; 
+    }
+
+    .como-usar:hover:after {
+        width: 5.8%;
+       
+    }
+
+    .sobre-nos {
+
+        cursor: pointer;
+        padding: 8px;
+        transition: background-color 0.2s ease;
+        background-color: none;
+        border: none;
+        border-radius: 17px;
+        
+    }
+
+    .sobre-nos:after {
+
+        content: "";
+        position:absolute;
+        background-color: rgb(250, 0, 0) ;
+        width: 0;
+        height: 1.7px;
+        margin-top: 5px;
+        transition: 0.3s ease; 
+
+    }
+   
+    .sobre-nos:hover:after {
+
+        width: 5.5%;
+       
+    }
+
+
+    .contato {
+
+        cursor: pointer;
+        padding: 8px;
+        transition: background-color 0.2s ease;
+        border: 1px solid rgb(219, 1, 1);
+        background-color: rgb(219, 1, 1);
+        border-radius: 17px;
+        color: rgb(77, 0, 0);
+       
+        border-radius: 17px;
+    }
+
+    .contato:hover {
+        border: 1px solid rgb(250, 0, 0);
+        background-color: rgb(250, 0, 0);
+    }
+
+
+
+
+    .disponiveis-hover-content {
+
+        position: fixed;
+        background: linear-gradient(to bottom, white 50%,  rgb(250, 0, 0) 50%);
+        width: 33%;
+        
+        height: 63%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 29px;
+        border-radius: 11px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+            transition: height 0.3s ease, 
+            opacity 0.3s ease;    
+            top:14%;
+            left: 39%;
+            opacity:0;
+            pointer-events: none;
+            z-index:11;
+            
+    }
+
+    .disponiveis-hover-content.show {
+
+                 opacity: 1; 
+                height: 450px;
+                pointer-events: auto;
+                z-index:11;
+    }
+    
+    .disponiveis-hover-cta1 {
+
+        font-size: 0.85rem;
+        display: flex;
+        flex-direction: column;
+        
+        
+        gap: 29px;
+        margin-top: 18px;
+     
+
+        }
+
+    .disponiveis-hover-title {
+
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        
+    }
+
+  
+
+    .disponiveis-hover-title p {
+
+        color: rgb(77, 0, 0);
+        font-size: 0.91rem;
+    }
+    .disponiveis-hover-cta2 {
+
+        width: max-content;
+        border: 1px solid white;
+        background-color: white;
+        padding: 9px;
+        border-radius: 12px;
+        color: rgb(250, 0, 0);
+        box-shadow: -12px 0 14px -9px rgba(0, 0, 0, 0.2);
+
+                 
+
+       
+    }
+
+   
+
+    .disponiveis-hover-cta3{
+
+        color:white;
+        width: fit-content;
+        flex-wrap: wrap;
+        
+        font-size: 0.68rem;
+        display: flex;
+        flex-direction: row;
+       gap:22px;
+       margin-bottom: 9px;
+       
+    }
+
+    .disponiveis-hover-cta3 p {
+        cursor: pointer;
+        border: 1px solid rgb(219, 1, 1);
+        background-color: rgb(219, 1, 1);
+        padding: 8px;
+        border-radius: 17px;
+        transition: all 0.2s ease,
+        box-shadow 0.2s ease;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    
+    .disponiveis-hover-cta3 span {
+
+        color:transparent
+    }
+    .disponiveis-hover-cta3 p:hover {
+
+        transform: scale(1.02);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .conversor-cta {
+      margin-top:90px;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        
+    }
+
+    .conversor-cta-content {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+        gap:65px;
+        
+    }
+    .conversor-cta-text {
+      
+        font-size: 2.1rem;
+        font-family: "Climate Crisis", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "YEAR" 1979;
+        color: rgb(250, 0, 0);
+    }
+
+    .conversor-cta-curved-line {
+        
+       width:  640px;
+       height: 320px;
+       border: solid 1px  rgb(250, 0, 0);
+       border-color:  rgb(250, 0, 0) transparent transparent transparent;
+       border-radius: 50%;
+
+       box-shadow: 0 -30px 45px -25px rgb(250, 0, 0) ;
+      
+    }
+
+    .converter {
+
+       
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width: 100%;
+        top: 340px;
+       
+        position:absolute;
+    }
+
+    .converter-content {
+        border: 1px solid white;
+        background-color: rgba(219, 1, 1, 0.205);
+        backdrop-filter: blur(8px);
+
+-webkit-backdrop-filter: blur(8px); 
+
+        width:1200px;
+        height: 298px;
+        border-radius:21px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    
+    }
+
+    .converter-all {
+
+        
+        width: 80%;
+        gap:32px;
+        display:flex;
+        flex-direction:column;
+       
+    }
+
+    .converter-topicos {
+
+        display:flex;
+        border:1px solid black;
+        padding:13px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        border-color:white;
+        border-radius:31px;
+        font-size:0.95rem;
+        justify-content:space-between;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+        
+    }
+
+    .converter-topicos span {
+
+        color:transparent;
+    }
+
+    .converter-topicos {
+
+        color:rgb(255, 255, 255);
+
+    }
+
+    .topicos-binario {
+        
+        border:1px solid  white;
+        background-color: white;
+        border-radius:31px;
+        width: 21%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        padding:4px;
+        font-size:0.95rem;
+        color: rgb(226, 14, 14);
+        transition: all 0.3s ease;
+        cursor:pointer;
+        letter-spacing:1px;
+        z-index: 4;
+    }
+
+   
+
+    .topicos-binario:hover {
+
+        border:1px solid  rgba(168, 2, 2, 0.09);
+        background-color: rgba(219, 1, 1, 0.205);
+        color:white;
+        transform: scale(1.02);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .topicos-binario.no-hover {
+
+        box-shadow: none;
+    }
+
+  
+
+
+    .topicos-fracionario {
+
+        border-radius:31px;
+        width: 21%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        padding:4px;
+        font-size:0.95rem;
+        
+        cursor:pointer;
+        transition: background-color 0.3s ease,
+        all 0.3s ease;
+        letter-spacing:1px;
+    }
+
+    .topicos-fracionario:hover {
+
+        border: 1px solid rgba(245, 35, 35, 0.09);
+        background-color: rgba(245, 35, 35, 0.09);
+        transform: scale(1.02);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .topicos-romano {
+
+        border-radius:31px;
+        width: 21%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        padding:4px;
+        font-size:0.95rem;
+        color: rgb(255, 255, 255);
+        letter-spacing:1px;
+        cursor:pointer;
+        transition: background-color 0.3s ease,
+        all 0.3s ease;
+    }
+
+    .topicos-romano:hover {
+
+        border: 1px solid rgba(245, 35, 35, 0.09);
+        background-color: rgba(245, 35, 35, 0.09);
+        transform: scale(1.02);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .binario-converter-inputs {
+
+        display:flex;
+        gap:25px;
+        pointer-events: auto;
+       
+        transition: opacity 0.5s ease;
+    }
+
+    .binario-converter-inputs.hidden {
+
+        opacity: 0;
+        pointer-events: none;
+      
+    }
+
+.binario-input-valor input  {
+
+    background-color: transparent;
+    border-color:white;
+    font-family:"Climate Crisis", serif;
+    font-weight:100;
+    width: 308px;
+    height: 72px;
+    border-radius:9px;
+    font-size:1.3rem;
+    color: white;
+    padding-top: 15px;
+    text-indent: 13px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+
+    -webkit-appearance: none;
+}
+
+.binario-input-label {
+
+    position:absolute;
+    color:rgb(204, 204, 204);
+    
+    width: 292px;
+    height: 72px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    pointer-events:none;
+    font-size:0.7rem;
+    margin-left:13px;
+    margin-top:-15px;
+}
+
+.de-binario {
+
+    display:flex;
+    flex-direction:column;
+    border:1px solid white;
+    width: 308px;
+    height: 72px;
+    border-radius:9px;
+    pointer-events:none;
+    font-weight:800;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+.de-binario-content {
+
+    display:flex;
+    flex-direction:column;
+    
+    margin-top:13px;
+}
+
+
+
+.de-binario span {
+    display:flex;
+    font-size:0.71rem;
+    margin-left:13px;
+    color:rgb(204, 204, 204);
+   
+  
+}
+
+.de-binario p {
+
+    margin-left:13px;
+    font-size:1.5rem;
+    color:white;
+    
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+   
+ 
+    width:fit-content;
+    
+}
+
+.para-decimal {
+
+    display:flex;
+    flex-direction:column;
+    border:1px solid white;
+    width: 308px;
+    height: 72px;
+    border-radius:9px;
+    pointer-events:none;
+    font-weight:800;
+     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+.para-decimal-content {
+
+    display:flex;
+    flex-direction:column;
+    
+    margin-top:13px;
+}
+
+.para-decimal span {
+    display:flex;
+    font-size:0.71rem;
+    margin-left:19px;
+    color:rgb(204, 204, 204);
+
+}
+
+.para-decimal p {
+
+    margin-left:19px;
+    font-size:1.5rem;
+    color:white;
+    
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:7px;
+    font-family: "Poppins", sans-serif;
+        font-weight: 800;
+    width:fit-content;
+}
+
+.para-decimal-setas {
+    position:absolute;
+    display:flex;
+   
+    width: 308px;
+    height: 72px;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left:-33px;
+}
+
+.para-decimal-setas i {
+
+    border-radius:100%;
+    background-color:rgb(112, 0, 0);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    border-color:white;
+    padding:14px;
+    backdrop-filter: blur(12px);
+
+-webkit-backdrop-filter: blur(12px); 
+    cursor:pointer;
+    pointer-events:auto;
+    transition: all 0.5s ease;
+}
+
+.para-decimal-setas i:hover {
+
+   transform:rotate(360deg);
+}
+
+
+.converter-button {
+
+   
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.converter-button button {
+
+    background-color: white;
+    border: none;
+    backdrop-filter: blur(12px);
+    border-radius:9px;
+    -webkit-backdrop-filter: blur(12px); 
+    padding:14px;
+    width: 210px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    color:rgb(124, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    }
+
+    .converter-button.hidden {
+
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+
+.btn:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
+}   
+
+.resultado {
+    width: max-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: transform 0.5s ease;
+   
+}
+
+
+
+
+
+.resultado {
+width: max-content;
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+color: white;
+font-size: 1.2rem;
+pointer-events: none;
+transition: transform 0.5s ease;
+
+}
+
+.topicos-fracionario.visible {
+    color: rgb(226, 14, 14);
+    background-color: white;
+    border-color: white;
+    
+}
+
+.topicos-fracionario.visible:hover{
+
+    border:1px solid  rgba(168, 2, 2, 0.09);
+        background-color: rgba(219, 1, 1, 0.205);
+        
+        color:white;
+}
+
+.topicos-fracionario.no-hover {
+
+    box-shadow: none;
+}
+
+.topicos-binario.hidden {
+
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+
+#bin-icon.hidden  {
+    color: white;
+}
+
+.topicos-romano.visible {
+    color: rgb(226, 14, 14);
+    background-color: white;
+    border-color: white;
+    
+}
+
+.topicos-romano.visible:hover{
+
+border:1px solid  rgba(168, 2, 2, 0.09);
+    background-color: rgba(219, 1, 1, 0.205);
+    
+    color:white;
+}
+
+.topicos-romano.no-hover {
+
+box-shadow: none;
+}
+
+
+
+
+    .fracionario-converter-inputs {
+
+    display:flex;
+    gap:25px;
+    position: absolute;
+   
+    margin-top: 92px;
+    margin-left: -9px;
+    opacity:0;
+    pointer-events: none;
+   
+    
+        
+    }
+
+    .fracionario-converter-inputs.visible {
+
+        opacity:1;
+        pointer-events: auto;
+        transition: opacity 0.5s ease;
+    }
+
+    .fracionario-input-valor input  {
+
+    background-color: transparent;
+    border-color:white;
+    font-family:"Climate Crisis", serif;
+    font-weight:100;
+    width: 308px;
+    height: 72px;
+    border-radius:9px;
+    font-size:1.3rem;
+    color: white;
+    padding-top: 15px;
+    text-indent: 13px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+   
+
+    }
+
+    .fracionario-input-label {
+
+    position:absolute;
+    color:rgb(204, 204, 204);
+
+    width: 292px;
+    height: 72px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    pointer-events:none;
+    font-size:0.7rem;
+    margin-left:13px;
+    margin-top:-15px;
+    }
+
+    .de-fracionario {
+
+    display:flex;
+    flex-direction:column;
+    border:1px solid white;
+    width: 308px;
+    height: 72px;
+    border-radius:9px;
+    pointer-events:none;
+    font-weight:800;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .de-fracionario-content {
+
+    display:flex;
+    flex-direction:column;
+
+    margin-top:13px;
+    }
+
+
+
+    .de-fracionario span {
+    display:flex;
+    font-size:0.71rem;
+    margin-left:13px;
+    color:rgb(204, 204, 204);
+
+
+    }
+
+    .de-fracionario p {
+
+    margin-left:13px;
+    font-size:1.5rem;
+    color:white;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+
+
+    width:fit-content;
+
+    }
+
+    .para-decimal1 {
+
+    display:flex;
+    flex-direction:column;
+    border:1px solid white;
+    width: 308px;
+    height: 72px;
+    border-radius:9px;
+    pointer-events:none;
+    font-weight:800;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .para-decimal1-content {
+
+    display:flex;
+    flex-direction:column;
+
+    margin-top:13px;
+    }
+
+    .para-decimal1 span {
+    display:flex;
+    font-size:0.71rem;
+    margin-left:19px;
+    color:rgb(204, 204, 204);
+
+    }
+
+    .para-decimal1 p {
+
+    margin-left:19px;
+    font-size:1.5rem;
+    color:white;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    width:fit-content;
+    }
+
+    .para-decimal1-setas {
+    position:absolute;
+    display:flex;
+
+    width: 308px;
+    height: 72px;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left:-33px;
+    }
+
+    .para-decimal1-setas i {
+
+    border-radius:100%;
+    background-color:rgb(112, 0, 0);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    border-color:white;
+    padding:14px;
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px); 
+    cursor:pointer;
+    pointer-events:none;
+    transition: all 0.5s ease;
+    }
+
+    .para-decimal1-setas i:hover {
+
+    transform:rotate(360deg);
+    }
+
+    .para-decimal1-setas i.visible {
+
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .para-decimal1-setas.visible:hover {
+
+        transform:rotate(360deg);
+
+    }
+
+    .frac-btn {
+        margin-top: 197px;
+        margin-left:748px;
+        position: absolute;
+        opacity:1;
+        pointer-events: none;
+        background-color: white;
+        border: none;
+        backdrop-filter: blur(12px);
+        border-radius:9px;
+        -webkit-backdrop-filter: blur(12px); 
+        padding:14px;
+        width: 210px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+        color:rgb(124, 0, 0);
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        opacity: 0;
+        pointer-events: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .frac-btn.active {
+
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .frac-btn:hover {
+
+        transform: scale(1.01);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
+    }
+
+
+    .romano-converter-inputs {
+
+    display:flex;
+    gap:25px;
+    position: absolute;
+   
+    margin-top: 92px;
+    margin-left: -9px;
+    opacity:0;
+    pointer-events: none;
+   
+    
+        
+    }
+
+    .romano-converter-inputs.visible {
+
+        opacity:1;
+        pointer-events: auto;
+        transition: opacity 0.5s ease;
+    }
+
+    .romano-input-valor input  {
+
+    background-color: transparent;
+    border-color:white;
+    font-family:"Climate Crisis", serif;
+    font-weight:100;
+    width: 308px;
+    height: 72px;
+    border-radius:9px;
+    font-size:1.3rem;
+    color: white;
+    padding-top: 15px;
+    text-indent: 13px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+   
+
+    }
+
+    .romano-input-label {
+
+    position:absolute;
+    color:rgb(204, 204, 204);
+
+    width: 292px;
+    height: 72px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    pointer-events:none;
+    font-size:0.7rem;
+    margin-left:13px;
+    margin-top:-15px;
+    }
+
+    .de-romano {
+
+    display:flex;
+    flex-direction:column;
+    border:1px solid white;
+    width: 308px;
+    height: 72px;
+    border-radius:9px;
+    pointer-events:none;
+    font-weight:800;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .de-romano-content {
+
+    display:flex;
+    flex-direction:column;
+
+    margin-top:13px;
+    }
+
+
+
+    .de-romano span {
+    display:flex;
+    font-size:0.71rem;
+    margin-left:13px;
+    color:rgb(204, 204, 204);
+
+
+    }
+
+    .de-romano p {
+
+    margin-left:13px;
+    font-size:1.5rem;
+    color:white;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+
+
+    width:fit-content;
+
+    }
+
+    .para-decimal2 {
+
+    display:flex;
+    flex-direction:column;
+    border:1px solid white;
+    width: 308px;
+    height: 72px;
+    border-radius:9px;
+    pointer-events:none;
+    font-weight:800;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .para-decimal2-content {
+
+    display:flex;
+    flex-direction:column;
+
+    margin-top:13px;
+    }
+
+    .para-decimal2 span {
+    display:flex;
+    font-size:0.71rem;
+    margin-left:19px;
+    color:rgb(204, 204, 204);
+
+    }
+
+    .para-decimal2 p {
+
+    margin-left:19px;
+    font-size:1.5rem;
+    color:white;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    width:fit-content;
+    }
+
+    .para-decimal2-setas {
+    position:absolute;
+    display:flex;
+
+    width: 308px;
+    height: 72px;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left:-33px;
+    }
+
+    .para-decimal2-setas i {
+
+    border-radius:100%;
+    background-color:rgb(112, 0, 0);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    border-color:white;
+    padding:14px;
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px); 
+    cursor:pointer;
+    pointer-events:none;
+    transition: all 0.5s ease;
+    }
+
+    .para-decimal2-setas i:hover {
+
+    transform:rotate(360deg);
+    }
+
+    .para-decimal2-setas i.visible {
+
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .para-decimal2-setas.visible:hover {
+
+        transform:rotate(360deg);
+
+    }
+
+    .roman-btn {
+        margin-top: 197px;
+        margin-left:748px;
+        position: absolute;
+        opacity:1;
+        pointer-events: none;
+        background-color: white;
+        border: none;
+        backdrop-filter: blur(12px);
+        border-radius:9px;
+        -webkit-backdrop-filter: blur(12px); 
+        padding:14px;
+        width: 210px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+        color:rgb(124, 0, 0);
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        opacity: 0;
+        pointer-events: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .roman-btn.active {
+
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .roman-btn:hover {
+
+        transform: scale(1.01);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
+    }
+
+</style>
+
+ 
+
+<body>
+
+    
+
+   <section class="header">
+
+    <div class="nav-bar">
+        
+        <div class="nav-bar-all">
+
+           
+                <div class="navbar-left">   
+                    <img src="IMGS/LOGO/LOGO PNG.png" alt="">
+
+                                <div class="navbar-languages">
+                    <div class="br">
+                        <p><i>&#x1F1E7;&#x1F1F7;</i> <span>..</span>Português</p>
+                    </div>
+                    <div class="eua">
+                        <p><i>&#x1F1FA;&#x1F1F8;</i> <span>..</span>Inglês</p>
+                    </div>
+                    <div class="esp">
+                        <p><i>&#x1F1EA;&#x1F1F8;</i> <span>..</span>Espanhol</p>
+                    </div>
+                        </div>
+                </div>
+
+            <div class="navbar-recursos">
+
+                <div class="disponiveis">
+                    <p>Conversores Disponíveis</p>  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="como-usar">
+                    <p>Como usar?</p>
+                </div>
+                <div class="sobre-nos">
+                    <p>Sobre Nós</p>
+                </div>
+                <div class="contato">
+                    <p>Contato</p>
+                </div>
+
+            
+                    <div class="disponiveis-hover-content">
+                       
+                        <div class="disponiveis-hover-cta1">
+                            <div class="disponiveis-hover-title">
+                                <i class="fa-solid fa-calculator fa-2xl" style="color: rgb(77, 0, 0)"></i>
+                                <p>Conversores Disponíveis</p>
+                            </div>
+
+                                <div class="disponiveis-hover-cta2">
+                                    <p>Conheça os recursos de conversâo de números <br>
+                                        100% grátis disponíveis em nosso site!</p>
+                                </div>
+                        </div>
+
+                        <div class="disponiveis-hover-cta3">
+                            <p><i class="fa-solid fa-square-binary"></i><span>.</span>Binário para Decimal</p>
+                            <p><i class="fa-solid fa-arrow-up-9-1" style="color: #ffffff;"></i><span>.</span>Decimal para Binário</p>
+                            <p><i class="fa-solid fa-percent" style="color: #ffffff;"></i><span>.</span>Fracionário para Decimal</p>
+                            <p><i class="fa-solid fa-arrow-down-9-1" style="color: #ffffff;"></i><span>.</span>Decimal para Fracionário</p>
+                            <p><i class="fa-solid fa-x" style="color: #ffffff;"></i><span>.</span>Romano para Decimal</p>
+                            <p><i class="fa-solid fa-v" style="color: #ffffff;"></i><span>.</span>Decimal para Romano</p>
+                        </div>
+
+                    </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+   </section>
+
+    <section class="conversor">
+
+        <div class="conversor-cta">
+            <div class="conversor-cta-content">
+                <div class="conversor-cta-text">
+                    CONVERSOR DE NÚMEROS
+                </div>
+                <div class="conversor-cta-curved-line">
+                </div>
+            </div>
+        </div>
+
+        <div class="converter">
+        <div class="converter-content"> 
+            <div class="converter-all"> 
+
+                <div class="converter-topicos"> 
+                    <div class="topicos-binario"> 
+                        <p><i class="fa-solid fa-square-binary" id="bin-icon" style="color:rgb(226, 14, 14);"></i><span>.</span>Binário</p>
+                    </div>
+
+                    <div class="topicos-fracionario"> 
+                        <p class="frac-topic-text"><i class="fa-solid fa-percent" style="color:rgb(226, 14, 14);;"></i><span>.</span>Fracionário</p>
+                    </div>
+
+                    <div class="topicos-romano"> 
+                        <p><i class="fa-solid fa-x" style="color:rgb(226, 14, 14);"></i><span>.</span>Romano</p>
+                    </div>
+                </div>   
+
+
+                <div class="binario-converter-inputs"> 
+                    <div class="binario-input-valor"> 
+                        <input type="number" class="bin-input"> 
+                       
+                    </div>   
+
+                    <div class="binario-input-label">
+                        <p>Número Binário</p>
+                    </div>
+                    
+                    <div class="de-binario"> 
+                        <div class="de-binario-content"> 
+                        <span>De</span>
+                        <p class="bin-txt">Binário</p>
+                        </div>   
+                    </div>   
+
+                    <div class="para-decimal"> 
+                        <div class="para-decimal-content"> 
+                        <span>Para</span>
+                        <p class="dec-txt">decimal</p>
+                        </div>   
+
+                        <div class="para-decimal-setas"> 
+                            <i class="fa-solid fa-arrow-right-arrow-left" style="color:white;"></i>
+                            </div> 
+
+                    </div>   
+                </div>   
+
+
+                
+                <div class="fracionario-converter-inputs"> 
+                    <div class="fracionario-input-valor"> 
+                        <input type="text" class="frac-input"> 
+                       
+                    </div>   
+
+                    <div class="fracionario-input-label">
+                        <p>Número Fracionário</p>
+                    </div>
+                    
+                    <div class="de-fracionario"> 
+                        <div class="de-fracionario-content"> 
+                        <span>De</span>
+                        <p class="frac-txt">Fracionário</p>
+                        </div>   
+                    </div>   
+
+                    <div class="para-decimal1"> 
+                        <div class="para-decimal1-content"> 
+                        <span>Para</span>
+                        <p class="dec-txt1">decimal</p>
+                        </div>   
+
+                        <div class="para-decimal1-setas"> 
+                            <i class="fa-solid fa-arrow-right-arrow-left" style="color:white;"></i>
+                            </div> 
+
+                    </div>   
+                </div>   
+
+                <div class="romano-converter-inputs"> 
+                    <div class="romano-input-valor"> 
+                        <input type="text" class="roman-input"> 
+                       
+                    </div>   
+
+                    <div class="romano-input-label">
+                        <p>Número Romano</p>
+                    </div>
+                    
+                    <div class="de-romano"> 
+                        <div class="de-romano-content"> 
+                        <span>De</span>
+                        <p class="roman-txt">Romano</p>
+                        </div>   
+                    </div>   
+
+                    <div class="para-decimal2"> 
+                        <div class="para-decimal2-content"> 
+                        <span>Para</span>
+                        <p class="dec-txt2">decimal</p>
+                        </div>   
+
+                        <div class="para-decimal2-setas"> 
+                            <i class="fa-solid fa-arrow-right-arrow-left" style="color:white;"></i>
+                            </div> 
+
+                    </div>   
+                </div>  
+
+                <div class="converter-button"> 
+
+                    <div class="resultado">
+                        <p class="res"></p> 
+                    </div>
+                    <button class="btn">Converter</button>
+                </div>   
+
+                <button class="frac-btn">Converter</button>
+
+                <button class="roman-btn">Converter</button>
+                
+            </div>   
+        </div>                                                      
+        </div>  
+        
+        
+        
+
+        
+    </section>
+
+    
+   <script>
+
+
+
+const disponiveisHover = document.querySelector('.disponiveis-hover-content');
+
+const disponiveisText = document.querySelector('.disponiveis');
+
+const body = document.body;
+
+
+disponiveisText.addEventListener('mouseenter', function() {
+
+    disponiveisHover.classList.add('show');
+});
+
+disponiveisHover.addEventListener('mouseleave', function() {
+
+disponiveisHover.classList.remove('show');
+});
+
+   </script>
+
+<script>
+
+document.querySelector('.btn').addEventListener('click', function() {
+    const campoNumero = document.querySelector('.bin-input');
+    const campoResultado = document.querySelector('.resultado');
+    const tipoAtual = document.querySelector('.bin-txt').textContent.trim(); // Pega o tipo atual (Binário ou Decimal)
+
+    campoResultado.textContent = "";
+
+    if (tipoAtual === "Binário") {
+        // Conversão de Binário para Decimal
+        if (!/^[01]+$/.test(campoNumero.value)) {
+            campoResultado.textContent = "Por favor insira um número válido (somente 0 e 1).";
+            campoResultado.style.color = 'red';
+            return;
+        }
+        const decimal = parseInt(campoNumero.value, 2);
+        campoResultado.textContent = `O número decimal é: ${decimal}`;
+    } else {
+        // Conversão de Decimal para Binário
+        if (!/^\d+$/.test(campoNumero.value)) {
+            campoResultado.textContent = "Por favor insira um número válido (somente números inteiros).";
+
+
+            campoResultado.style.color = 'red';
+            return;
+        }
+        const binario = Number(campoNumero.value).toString(2);
+        campoResultado.textContent = `O número binário é: ${binario}`;
+    }
+    campoResultado.style.color = 'white';
+});
+
+// Função para inverter os textos e lógica de conversão
+document.querySelector('.fa-arrow-right-arrow-left').addEventListener('click', function() {
+    const campoLabel = document.querySelector('.binario-input-label p');
+    const campoDe = document.querySelector('.bin-txt');
+    const campoPara = document.querySelector('.dec-txt');
+    const campoNumero = document.querySelector('.bin-input');
+
+    if (campoDe.textContent.trim() === "Binário") {
+        // Muda para Decimal → Binário
+        campoLabel.textContent = "Número Decimal";
+        campoDe.textContent = "Decimal";
+        campoPara.textContent = "Binário";
+       
+    } else {
+        // Muda para Binário → Decimal
+  
+        campoLabel.textContent = "Número Binário";
+        campoDe.textContent = "Binário";
+        campoPara.textContent = "Decimal";
+        
+    }
+
+    // Limpa o campo de entrada e o resultado ao trocar
+    campoNumero.value = "";
+    document.querySelector('.resultado').textContent = "";
+});
+
+
+
+
+   
+
+   
+</script>
+
+<script>
+
+    
+
+    const topicosFracionario = document.querySelector('.topicos-fracionario');
+
+   
+
+    const topicosBinario = document.querySelector('.topicos-binario')
+    
+    const topicosRomano = document.querySelector('.topicos-romano')
+
+    const binicon = document.querySelector('#bin-icon')
+
+    const fracionarioInputs =  document.querySelector('.fracionario-converter-inputs');
+
+    const binarioInputs =  document.querySelector('.binario-converter-inputs');
+
+    const romanoInputs =  document.querySelector('.romano-converter-inputs');
+
+    const binarioLabel = document.querySelector('.binario-input-label');
+
+    const setas1 = document.querySelector('.fa-arrow-right-arrow-left')
+
+    const setas2 = document.querySelector('.para-decimal1-setas i')
+
+    const setas3 = document.querySelector('.para-decimal2-setas i')
+
+    const txt1 = document.querySelector('.bin-txt');
+
+    const txt2 = document.querySelector('.dec-txt');
+
+    const txt3 = document.querySelector('.roman-txt');
+
+    const binBtn = document.querySelector('.btn');
+
+    const fracBtn = document.querySelector('.frac-btn');
+
+    const romanBtn = document.querySelector('.roman-btn');
+
+    const campoResultado = document.querySelector('.resultado');
+
+
+
+    
+
+    topicosFracionario.addEventListener('click', function() {
+
+       
+        topicosFracionario.classList.add('visible');
+     
+        topicosFracionario.classList.add('no-hover');
+        
+        topicosBinario.classList.add('hidden');
+
+        topicosRomano.classList.remove('visible');
+      
+        topicosBinario.classList.remove('no-hover');
+
+        fracionarioInputs.classList.add('visible');
+
+        binarioInputs.classList.add('hidden');
+
+        romanoInputs.classList.remove('visible');
+
+        setas1.classList.remove('visible');
+
+        setas2.classList.add('visible');
+
+        setas3.classList.remove('visible');
+
+        fracBtn.classList.add('active');
+
+        binBtn.classList.add('hidden');
+
+        campoResultado.textContent = "";
+
+       
+       
+
+
+    });
+
+    topicosRomano.addEventListener('click', function() {
+
+    romanoInputs.classList.add('visible');
+
+    topicosFracionario.classList.remove('visible');
+
+    topicosFracionario.classList.remove('no-hover');
+
+    topicosRomano.classList.add('visible');
+
+    topicosRomano.classList.remove('hidden');
+
+    topicosBinario.classList.add('hidden');
+   
+    topicosRomano.classList.add('no-hover');
+
+    binicon.classList.add('hidden');
+
+    topicosBinario.classList.remove('no-hover');
+
+    setas1.classList.remove('visible')
+
+    setas2.classList.remove('visible')
+
+    setas3.classList.add('visible')
+
+    fracBtn.classList.remove('active');
+
+    romanBtn.classList.add('active');
+
+    binBtn.classList.add('hidden');
+
+    fracionarioInputs.classList.remove('visible');
+
+    binarioInputs.classList.add('hidden');
+
+    campoResultado.textContent = "";
+
+    });
+
+    topicosBinario.addEventListener('click', function() {
+
+        romanBtn.classList.remove('active');
+        romanoInputs.classList.remove('visible');
+        setas3.classList.add('visible')
+
+    topicosFracionario.classList.remove('visible');
+    
+    topicosFracionario.classList.remove('no-hover')
+   
+    topicosBinario.classList.remove('hidden');
+    topicosRomano.classList.remove('visible');
+    topicosRomano.classList.remove('no-hover');
+    binicon.classList.add('hidden');
+    topicosBinario.classList.add('no-hover');
+
+    fracionarioInputs.classList.remove('visible');
+
+        binarioInputs.classList.remove('hidden');
+
+        setas1.classList.add('visible')
+
+        setas2.classList.remove('visible');
+
+        setas3.classList.remove('visible');
+
+        fracBtn.classList.remove('active');
+
+        binBtn.classList.remome('hidden');
+
+        campoResultado.textContent = "";
+
+    });
+
+</script>
+
+
+  
+<script>
+
+document.querySelector('.frac-btn').addEventListener('click', function() {
+    const campoNumero = document.querySelector('.frac-input');
+    const campoResultado = document.querySelector('.resultado');
+    const tipoAtual = document.querySelector('.frac-txt').textContent.trim(); // Pega o tipo atual (Frações ou Decimal)
+
+    campoResultado.textContent = "";
+
+    if (tipoAtual === "Fracionário") {
+
+        
+        // Conversão de Fração para Decimal
+        if (!/^\d+\/\d+$/.test(campoNumero.value)) {
+            campoResultado.textContent = "Por favor insira uma fração válida (ex: 3/4).";
+            campoResultado.style.color = 'red';
+            return;
+        }
+
+        const [numerador, denominador] = campoNumero.value.split('/').map(Number);
+        if (denominador === 0) {
+            campoResultado.textContent = "O denominador não pode ser zero.";
+            campoResultado.style.color = 'red';
+            return;
+        }
+
+        const decimal = numerador / denominador;
+        campoResultado.textContent = `O número decimal é: ${decimal}`;
+    } else {
+        // Conversão de Decimal para Fração
+        if (!/^\d+(\.\d+)?$/.test(campoNumero.value)) {
+            campoResultado.textContent = "Por favor insira um número decimal válido.";
+            campoResultado.style.color = 'red';
+            return;
+        }
+
+        const decimal = parseFloat(campoNumero.value);
+        let numerador = decimal;
+        let denominador = 1;
+
+        while (numerador % 1 !== 0) {
+            numerador *= 10;
+            denominador *= 10;
+        }
+
+        // Simplifica a fração usando o MDC (Máximo Divisor Comum)
+        function mdc(a, b) {
+            return b === 0 ? a : mdc(b, a % b);
+        }
+        const divisor = mdc(numerador, denominador);
+        numerador /= divisor;
+        denominador /= divisor;
+
+        campoResultado.textContent = `A fração é: ${numerador}/${denominador}`;
+    }
+    campoResultado.style.color = 'white';
+});
+
+// Função para inverter os textos e lógica de conversão
+document.querySelector('.para-decimal1-setas').addEventListener('click', function() {
+    const campoLabel = document.querySelector('.fracionario-input-label');
+    const campoDe = document.querySelector('.frac-txt');
+    const campoPara = document.querySelector('.dec-txt1');
+    const campoNumero = document.querySelector('.frac-input');
+
+    if (campoDe.textContent.trim() === "Fracionário") {
+        // Muda para Decimal → Fração
+        campoLabel.textContent = "Número Decimal";
+        campoDe.textContent = "Decimal";
+        campoPara.textContent = "Fracionário";
+    } else {
+        // Muda para Fração → Decimal
+        campoLabel.textContent = "Número Fracionário";
+        campoDe.textContent = "Fracionário";
+        campoPara.textContent = "Decimal";
+    }
+
+    // Limpa o campo de entrada e o resultado ao trocar
+    campoNumero.value = "";
+    document.querySelector('.resultado').textContent = "";
+});
+</script>
+
+
+<script>
+    
+    document.querySelector('.roman-btn').addEventListener('click', function () {
+    const campoNumero = document.querySelector('.roman-input');
+    const campoResultado = document.querySelector('.resultado');
+    const tipoAtual = document.querySelector('.roman-txt').textContent.trim();
+
+    campoResultado.textContent = "";
+
+    if (tipoAtual === "Romano") {
+        // Conversão de Romano para Decimal
+        function romanoParaDecimal(romano) {
+            const valores = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
+            let total = 0;
+
+            for (let i = 0; i < romano.length; i++) {
+                const atual = valores[romano[i]];
+                const proximo = valores[romano[i + 1]] || 0;
+
+                if (atual < proximo) total -= atual;
+                else total += atual;
+            }
+            return total;
+        }
+
+        if (!/^[IVXLCDM]+$/i.test(campoNumero.value)) {
+            campoResultado.textContent = "Por favor, insira um número romano válido.";
+            campoResultado.style.color = 'red';
+            return;
+        }
+
+        const decimal = romanoParaDecimal(campoNumero.value.toUpperCase());
+        campoResultado.textContent = `O número decimal é: ${decimal}`;
+    } else {
+        // Conversão de Decimal para Romano
+        function decimalParaRomano(num) {
+            const valores = [
+                { valor: 1000, simbolo: "M" },
+                { valor: 900, simbolo: "CM" },
+                { valor: 500, simbolo: "D" },
+                { valor: 400, simbolo: "CD" },
+                { valor: 100, simbolo: "C" },
+                { valor: 90, simbolo: "XC" },
+                { valor: 50, simbolo: "L" },
+                { valor: 40, simbolo: "XL" },
+                { valor: 10, simbolo: "X" },
+                { valor: 9, simbolo: "IX" },
+                { valor: 5, simbolo: "V" },
+                { valor: 4, simbolo: "IV" },
+                { valor: 1, simbolo: "I" }
+            ];
+
+            let romano = "";
+            for (const item of valores) {
+                while (num >= item.valor) {
+                    romano += item.simbolo;
+                    num -= item.valor;
+                }
+            }
+            return romano;
+        }
+
+        if (!/^\d+$/.test(campoNumero.value) || campoNumero.value <= 0 || campoNumero.value > 3999) {
+            campoResultado.textContent = "Por favor, insira um número decimal válido (entre 1 e 3999).";
+            campoResultado.style.color = 'red';
+            return;
+        }
+
+        const romano = decimalParaRomano(Number(campoNumero.value));
+        campoResultado.textContent = `O número romano é: ${romano}`;
+    }
+
+    campoResultado.style.color = 'white';
+});
+
+// Função para inverter os textos e lógica de conversão
+document.querySelector('.para-decimal2-setas').addEventListener('click', function () {
+    const campoLabel = document.querySelector('.romano-input-label');
+    const campoDe = document.querySelector('.roman-txt');
+    const campoPara = document.querySelector('.dec-txt2');
+    const campoNumero = document.querySelector('.roman-input');
+
+    if (campoDe.textContent.trim() === "Romano") {
+        // Muda para Decimal → Romano
+        campoLabel.textContent = "Número Decimal";
+        campoDe.textContent = "Decimal";
+        campoPara.textContent = "Romano";
+    } else {
+        // Muda para Romano → Decimal
+        campoLabel.textContent = "Número Romano";
+        campoDe.textContent = "Romano";
+        campoPara.textContent = "Decimal";
+    }
+
+    // Limpa o campo de entrada e o resultado ao trocar
+    campoNumero.value = "";
+    document.querySelector('.resultado').textContent = "";
+});
+</script>
+
+<script>
+
+
+
+</script>
+</body>
+</html># Numbers-Converter
