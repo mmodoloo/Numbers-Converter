@@ -2,7 +2,7 @@
 
 <Preview>
 
-link: https://mmodoloo.github.io/Numbers-Converter/
+https://mmodoloo.github.io/Numbers-Converter/
 
 </Preview>
 
